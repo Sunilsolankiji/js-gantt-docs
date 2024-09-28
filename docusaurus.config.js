@@ -19,7 +19,6 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  GIT_USER: "Sunilsolankiji",
   organizationName: "Sunilsolankiji", // Usually your GitHub org/user name.
   projectName: "js-gantt-docs", // Usually your repo name.
 
