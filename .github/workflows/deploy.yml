@@ -9,8 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      id-token: write
+      contents: write  # Allow write access to the repository
 
     steps:
       - name: Checkout repository
@@ -28,10 +27,6 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          repository-name: ${{ github.repository }}
-          branch: gh-pages
-          folder: docs  # Replace with your Docusaurus output folder if different
-          strategy: replace
+        run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
