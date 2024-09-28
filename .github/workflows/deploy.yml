@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Allow write access to the repository
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -27,6 +27,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: USE_SSH=true npm run deploy
+        run: GIT_USER=Sunilsolankiji npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_USER: "Sunilsolankiji"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Token from GitHub secrets
