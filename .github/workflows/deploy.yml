@@ -3,34 +3,28 @@ name: Deploy Docusaurus site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust this if your default branch is not 'main'
+      - main  # Or your default branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'  # Use Node.js 18
+          node-version: '18'
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build website
+      - name: Build Docusaurus site
         run: npm run build
-
-      - name: Configure Git
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Provided automatically by GitHub Actions
-          GIT_USER: ${{ github.actor }}  # Use the GitHub username of the actor triggering the action
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
