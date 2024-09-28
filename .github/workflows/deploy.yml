@@ -3,7 +3,7 @@ name: Deploy Docusaurus site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust if your default branch is not 'main'
+      - main  # Adjust this if your default branch is not 'main'
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Ensure the version matches your project needs
+          node-version: '18'  # Use Node.js 18
 
       - name: Install dependencies
         run: npm ci
@@ -27,4 +27,5 @@ jobs:
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided by GitHub Actions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Provided automatically by GitHub Actions
+          GIT_USER: ${{ github.actor }}  # Use the GitHub username of the actor triggering the action
