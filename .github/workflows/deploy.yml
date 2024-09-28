@@ -27,5 +27,4 @@ jobs:
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
-          GIT_USER: Sunilsolankiji  # Your GitHub username
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.JS_GANTT_DOCS }}
