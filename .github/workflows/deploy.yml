@@ -26,6 +26,11 @@ jobs:
       - name: Build Docusaurus site
         run: npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "${{ secrets.EMAIL }}"
+          git config --global user.name "${{ secrets.USERNAME }}"
+
       - name: Deploy to GitHub Pages
         run: GIT_USER=Sunilsolankiji npm run deploy
         env:
