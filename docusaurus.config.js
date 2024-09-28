@@ -7,20 +7,20 @@ const isDeployPreview =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "js-gantt",
+  title: "js-gantt-docs",
   tagline: "Streamline Your Project Timelines with Ease",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io',
+  url: "https://sunilsolankiji.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/your-repo-name/',
+  baseUrl: "/js-gantt-docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'your-repo-name', // Usually your repo name.
+  organizationName: "Sunilsolankiji", // Usually your GitHub org/user name.
+  projectName: "js-gantt-docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
