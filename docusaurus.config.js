@@ -138,9 +138,9 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       algolia: {
-        appId: "WGN8TBRKNK",
-        apiKey: "ee4324f1924bdd3dfd6d0e296ff5849d",
-        indexName: "ztss221io",
+        appId: "TQY4SA9OJY",
+        apiKey: "4dbad61d62627cbb6e324faedd6dec30",
+        indexName: "TQY4SA9OJY",
         replaceSearchResultPathname:
           isDev || isDeployPreview
             ? {
