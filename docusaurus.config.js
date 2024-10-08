@@ -54,6 +54,15 @@ const config = {
     ({
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
+      headTags: [
+        {
+          tagName: 'meta',
+          attributes: {
+            name: 'algolia-site-verification',
+            content: 'D65015E538E9F4DD', // Replace with the code given by Algolia
+          },
+        },
+      ],
       navbar: {
         title: "js-gantt",
         logo: {
