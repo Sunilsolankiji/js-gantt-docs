@@ -21,17 +21,17 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/getting-started"
           >
-            js-gantt chart - 5min ⏱️
+            javascriptgantt chart - 5min ⏱️
           </Link>
         </div>
-        {/* <div className={styles.demo}>
+        <div className={styles.demo}>
           <Link
             className="button button--secondary button--lg"
-            to="https://zehntech.github.io/js-gantt/"
+            to="https://sunilsolankiji.github.io/jsgantt/"
           >
             Live Demo!
           </Link>
-        </div> */}
+        </div>
       </div>
     </header>
   );
@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="js-gantt chart documentation"
+      description="javascriptgantt chart documentation"
     >
       <HomepageHeader />
       <main>

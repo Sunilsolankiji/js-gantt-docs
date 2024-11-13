@@ -6,9 +6,9 @@ sidebar_position: 2
 
 To integrate **jsGantt Chart Library**, adhere to the steps below:
 
-1.  **Download**: Obtain the library files from our [website](https://zehntech.github.io/js-gantt/) or [repository](https://github.com/zehntech/js-gantt), or install via npm:
+1.  **Download**: Obtain the library files from our [website](https://sunilsolankiji.github.io/jsgantt/) or [repository](https://github.com/sunilsolankiji/jsgantt), or install via npm:
     ```bash
-    npm install js-gantt
+    npm install javascriptgantt
     ```
 2.  **Integrate files**: Include the library files (`gantt.js` and `gantt.css`) into your project.
 3.  **Link Files**: Reference the library files in your HTML:
@@ -20,4 +20,4 @@ To integrate **jsGantt Chart Library**, adhere to the steps below:
 
 4.  Get Started: You're now ready to start using the jsGantt Chart Library!
 
-![jsGantt logo](/gantt-img/js-gantt-screenshot.png)
+![javascriptgantt logo](/gantt-img/js-gantt-screenshot.png)

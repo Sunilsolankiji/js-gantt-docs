@@ -7,7 +7,7 @@ const isDeployPreview =
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "js-gantt-docs",
+  title: "javascriptgantt-docs",
   tagline: "Streamline Your Project Timelines with Ease",
   favicon: "img/favicon.ico",
 
@@ -64,9 +64,9 @@ const config = {
         },
       ],
       navbar: {
-        title: "js-gantt",
+        title: "javascriptgantt",
         logo: {
-          alt: "js-gantt Logo",
+          alt: "javascriptgantt Logo",
           src: "img/logo.png",
         },
         items: [

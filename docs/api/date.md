@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: API reference for js-gantt chart.
+description: API reference for javascriptgantt chart.
 ---
 
 # Date Methods

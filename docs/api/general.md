@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: API reference for js-gantt chart.
+description: API reference for javascriptgantt chart.
 ---
 
 # Gantt
