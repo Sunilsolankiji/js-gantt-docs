@@ -24,14 +24,14 @@ function HomepageHeader() {
             javascriptgantt chart - 5min ⏱️
           </Link>
         </div>
-        <div className={styles.demo}>
+        {/* <div className={styles.demo}>
           <Link
             className="button button--secondary button--lg"
-            to="https://sunilsolankiji.github.io/jsgantt/"
+            to="https://sunilsolankiji.github.io/javascriptgantt/"
           >
             Live Demo!
           </Link>
-        </div>
+        </div> */}
       </div>
     </header>
   );

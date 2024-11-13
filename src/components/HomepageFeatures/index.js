@@ -12,7 +12,7 @@ export default function HomepageFeatures() {
             will guide you through the installation process, usage instructions,
             and available features of the library.
           </p>
-          <iframe height="500" width="100%" src="https://sunilsolankiji.github.io/jsgantt/" allowFullScreen />
+          <iframe height="500" width="100%" src="https://sunilsolankiji.github.io/javascriptgantt/" allowFullScreen />
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 To integrate **javascriptgantt Chart Library**, adhere to the steps below:
 
-1.  **Download**: Obtain the library files from our [website](https://sunilsolankiji.github.io/jsgantt/) or [repository](https://github.com/sunilsolankiji/jsgantt), or install via npm:
+1.  **Download**: Obtain the library files from our [website](https://sunilsolankiji.github.io/javascriptgantt/) or [repository](https://github.com/sunilsolankiji/javascriptgantt), or install via npm:
     ```bash
     npm install javascriptgantt
     ```

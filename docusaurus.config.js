@@ -83,7 +83,7 @@ const config = {
             label: "API",
           },
           {
-            href: "https://github.com/sunilsolankiji/jsgantt",
+            href: "https://github.com/sunilsolankiji/javascriptgantt",
             label: "GitHub",
             position: "right",
           },
@@ -135,7 +135,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/sunilsolankiji/jsgantt",
+                href: "https://github.com/sunilsolankiji/javascriptgantt",
               },
             ],
           },

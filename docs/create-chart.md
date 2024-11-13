@@ -95,4 +95,4 @@ jsGantt.render();
 
 **Note:** Remember to call `jsGantt.render();` whenever you wish to visualize the updated data.
 
-[Live demo](https://sunilsolankiji.github.io/jsgantt/)
+[Live demo](https://sunilsolankiji.github.io/javascriptgantt/)
