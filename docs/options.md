@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Options
 
-The **jsGantt Library** provides various configuration options to tailor the chart to your specific requirements. You can customize the chart's timeline, task bars, labels, colors, and more.
+The **javascriptgantt Library** provides various configuration options to tailor the chart to your specific requirements. You can customize the chart's timeline, task bars, labels, colors, and more.
 
 ## date_format
 
@@ -542,7 +542,7 @@ jsGantt.options.selectAreaOnDrag = true; // default is false
 
 ## mouseScroll
 
-With jsGantt, users can efficiently navigate the timeline by clicking and dragging with the mouse, enabling seamless scrolling.
+With javascriptgantt, users can efficiently navigate the timeline by clicking and dragging with the mouse, enabling seamless scrolling.
 By default it is `false`
 
 ```js title="mouseScroll"

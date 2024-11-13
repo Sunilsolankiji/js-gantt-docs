@@ -140,7 +140,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2023 jsgantt`,
+        copyright: `Copyright © 2023 javascriptgantt`,
       },
       prism: {
         theme: prismThemes.github,

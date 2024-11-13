@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # Events
 
-The **Events** option in the **jsGantt library** offers a comprehensive framework for managing interactions within the Gantt chart. By attaching events to the jsGantt library, users can set up and customize handlers for key actions such as task creation, updates, deletions, and various user interactions. This allows developers to tailor specific responses to user actions, ensuring the Gantt chart's behavior aligns with project management workflows and requirements. The Events option significantly enhances the chart's interactivity and responsiveness, providing a seamless and intuitive user experience.
+The **Events** option in the **javascriptgantt library** offers a comprehensive framework for managing interactions within the Gantt chart. By attaching events to the javascriptgantt library, users can set up and customize handlers for key actions such as task creation, updates, deletions, and various user interactions. This allows developers to tailor specific responses to user actions, ensuring the Gantt chart's behavior aligns with project management workflows and requirements. The Events option significantly enhances the chart's interactivity and responsiveness, providing a seamless and intuitive user experience.
 
 ## On Task DblClick
 

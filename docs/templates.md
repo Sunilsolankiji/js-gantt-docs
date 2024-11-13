@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Templates
 
-The **jsGantt Library** provides various configuration. The Templates option in the jsGantt library provides a customizable way to initialize various elements and behaviors within the Gantt chart. By using the templates, users can define templates for tooltips, taskbar text, task dragging, grid elements, and more. This allows for tailored presentations and interactions suited to specific project needs. The feature ensures flexibility and personalization, enhancing the user experience by allowing detailed customization of the Gantt chart's appearance and functionality.
+The **javascriptgantt Library** provides various configuration. The Templates option in the javascriptgantt library provides a customizable way to initialize various elements and behaviors within the Gantt chart. By using the templates, users can define templates for tooltips, taskbar text, task dragging, grid elements, and more. This allows for tailored presentations and interactions suited to specific project needs. The feature ensures flexibility and personalization, enhancing the user experience by allowing detailed customization of the Gantt chart's appearance and functionality.
 
 ## tooltip_text
 

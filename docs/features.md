@@ -77,4 +77,4 @@ Dark mode theme available for comfortable viewing in low-light environments.
 
 ![Theme GIF](/gantt-img/theme.gif)
 
-This section outlines the comprehensive features available in the jsGantt library, enhancing project management capabilities with robust functionalities and customizable options.
+This section outlines the comprehensive features available in the javascriptgantt library, enhancing project management capabilities with robust functionalities and customizable options.
