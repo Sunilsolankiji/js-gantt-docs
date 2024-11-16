@@ -627,3 +627,14 @@ type `number`, by default it is `80`
 ```js title="minColWidth"
 jsGantt.options.minColWidth = 85 // default is 80;
 ```
+
+## dropArea
+
+The `dropArea` option is used to highlight the area where a task will be dropped in the Gantt chart.
+
+**Type** :  `boolean`  
+**Default** :  `true`
+
+```javascript title="dropArea"
+jsGantt.options.dropArea = true; // The default is true.
+```
