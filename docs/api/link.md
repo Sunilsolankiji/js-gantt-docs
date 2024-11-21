@@ -16,7 +16,7 @@ const link = {
   target: 23, // target task id
   type: 1, // link type
 };
-jsGantt.createLink(link);
+javascriptgantt.createLink(link);
 ```
 
 ## Delete Link
@@ -24,5 +24,5 @@ jsGantt.createLink(link);
 Method to delete a link
 
 ```js title="deleteLink"
-jsGantt.deleteLink(id);
+javascriptgantt.deleteLink(id);
 ```

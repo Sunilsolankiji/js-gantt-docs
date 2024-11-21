@@ -11,8 +11,8 @@ To create a basic **Gantt Chart**, follow these steps:
 Add the necessary JavaScript and CSS files to your HTML or project:
 
 ```html title="1. Include Library Files"
-<script src="js-gantt.js"></script>
-<link rel="stylesheet" href="js-gantt.css" type="text/css" />
+<script src="gantt.js"></script>
+<link rel="stylesheet" href="gantt.css" type="text/css" />
 ```
 
 ## Define Container Element
@@ -37,9 +37,9 @@ const teplates = {
   // check the templates page
 };
 
-let gantt = new jsGantt(element, options, templates);
+let javascriptgantt = new javascriptgantt(element, options, templates);
 
-jsGantt.options.columns = [
+javascriptgantt.options.columns = [
   {
     name: "text",
     width: 245,
@@ -55,7 +55,7 @@ jsGantt.options.columns = [
   // Add more columns as needed
 ];
 
-jsGantt.options.data = [
+javascriptgantt.options.data = [
   { id: 1, text: "Project 1", parent: 0, progress: 50 },
   {
     id: 2,
@@ -68,7 +68,7 @@ jsGantt.options.data = [
   // Add more tasks and subtasks
 ];
 
-jsGantt.options.scales = [
+javascriptgantt.options.scales = [
   {
     unit: "week",
     step: 1,
@@ -84,15 +84,15 @@ jsGantt.options.scales = [
   // Define more scales if necessary
 ];
 
-jsGantt.options.links = [
+javascriptgantt.options.links = [
   { id: 1, source: 1, target: 2, type: 0 },
   { id: 2, source: 2, target: 3, type: 1 },
   // Define task dependencies (links) as needed
 ];
 
-jsGantt.render();
+javascriptgantt.render();
 ```
 
-**Note:** Remember to call `jsGantt.render();` whenever you wish to visualize the updated data.
+**Note:** Remember to call `javascriptgantt.render();` whenever you wish to visualize the updated data.
 
 [Live demo](https://sunilsolankiji.github.io/javascriptgantt/)

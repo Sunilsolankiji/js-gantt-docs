@@ -10,7 +10,7 @@ description: API reference for javascriptgantt chart.
 formateDateToString is for formatting date in required format.
 
 ```js title="formatDateToString"
-jsGantt.formatDateToString(format, date);
+javascriptgantt.formatDateToString(format, date);
 ```
 
 Here `format` is the format in which we want the date and `date` is the date which we want to format.
@@ -62,7 +62,7 @@ For example, if you want **20th June 2023** as **20/06/2023**, you should specif
 ## Add specific duration to a date
 
 ```js title="add"
-jsGantt.add(date, number, unit);
+javascriptgantt.add(date, number, unit);
 ```
 
 **date** - (Date) the date object that you need to add a time to/subtract a time from

@@ -17,7 +17,7 @@ const marker = {
   title: gantt.formatDateToString("%d %M %y", gantt.add(new Date(), 1, "day")),
 };
 
-jsGantt.addMarker(marker);
+javascriptgantt.addMarker(marker);
 ```
 
 **start_date** is the start date of the marker
@@ -30,7 +30,7 @@ jsGantt.addMarker(marker);
 Method to add a today flag to the gantt
 
 ```js title="addTodayFlag"
-jsGantt.addTodayFlag();
+javascriptgantt.addTodayFlag();
 ```
 
 ## Remove Today Flag
@@ -38,5 +38,5 @@ jsGantt.addTodayFlag();
 Method to remove today flag
 
 ```js title="removeTodayFlag"
-jsGantt.removeTodayFlag();
+javascriptgantt.removeTodayFlag();
 ```

@@ -10,7 +10,7 @@ description: API reference for javascriptgantt chart.
 Method to render the gantt chart
 
 ```js title="render"
-jsGantt.render();
+javascriptgantt.render();
 ```
 
 Here element is the div where you want to append gantt,
@@ -21,7 +21,7 @@ element is optional if you are not calling render function first time in your co
 Method to destroy the gantt chart
 
 ```js title="destroy"
-jsGantt.destroy();
+javascriptgantt.destroy();
 ```
 
 ## Get the current zoom level scale config {#getScale}
@@ -29,7 +29,7 @@ jsGantt.destroy();
 Method to get the current level zoom scale
 
 ```js title="getScale"
-jsGantt.getScale();
+javascriptgantt.getScale();
 ```
 
 ## Initialize zoom level
@@ -37,7 +37,7 @@ jsGantt.getScale();
 Method to initialize the zoom level, call this method
 
 ```js title="zoomInit"
-jsGantt.zoomInit();
+javascriptgantt.zoomInit();
 ```
 
 ## Request FullScreen
@@ -45,7 +45,7 @@ jsGantt.zoomInit();
 Method to view gantt in fullscreen
 
 ```js title="requestFullScreen"
-jsGantt.requestFullScreen();
+javascriptgantt.requestFullScreen();
 ```
 
 ## Exit FullScreen
@@ -53,7 +53,7 @@ jsGantt.requestFullScreen();
 Method to exit fullscreen
 
 ```js title="exitFullScreen"
-jsGantt.exitFullScreen();
+javascriptgantt.exitFullScreen();
 ```
 
 ## Expand All
@@ -61,7 +61,7 @@ jsGantt.exitFullScreen();
 Method to expanding all tasks
 
 ```js title="expandAll"
-jsGantt.expandAll();
+javascriptgantt.expandAll();
 ```
 
 ## Collapse All
@@ -69,7 +69,7 @@ jsGantt.expandAll();
 Method to Collapsing all tasks
 
 ```js title="collapseAll"
-jsGantt.collapseAll();
+javascriptgantt.collapseAll();
 ```
 
 ## Add new data to existing data
@@ -78,7 +78,7 @@ Using this you can add new data to the existing data in gantt
 here `data` is `array` which contain new data
 
 ```js title="parse"
-jsGantt.parse(data);
+javascriptgantt.parse(data);
 ```
 
 ## Clear All
@@ -87,7 +87,7 @@ It clears the old data
 use it only when you change the data from your side.
 
 ```js title="clearAll"
-jsGantt.clearAll();
+javascriptgantt.clearAll();
 ```
 
 ## Get date cell position {#posFromDate}
@@ -95,7 +95,7 @@ jsGantt.clearAll();
 Get the position of the date cell from timeline start
 
 ```js title="posFromDate"
-jsGantt.posFromDate();
+javascriptgantt.posFromDate();
 ```
 
 ## Auto Scheduling
@@ -103,7 +103,7 @@ jsGantt.posFromDate();
 Method to automatically schedule your tasks based on the relations between them.
 
 ```js title="autoScheduling"
-jsGantt.autoScheduling();
+javascriptgantt.autoScheduling();
 ```
 
 ## Sort Data
@@ -112,7 +112,7 @@ To initiate sorting within the grid based on a specific action or event, such as
 here **text** is the column field name on that basis data will be sorted, and second parameter `true` is `boolean` which is sorting order `asc` or `desc`.
 
 ```js title="sort"
-jsGantt.sort("text", true);
+javascriptgantt.sort("text", true);
 ```
 
 ## Attach an event
@@ -122,7 +122,7 @@ Method to attach an event to Gantt chart.
 it take two param first is event name and second is a callback function which execute when the event is triggered.
 
 ```js title="attachEvent"
-jsGantt.attachEvent("onTaskDblClick", (event) => {
+javascriptgantt.attachEvent("onTaskDblClick", (event) => {
         console.log("onTaskDblClick: ", event);
       });
 ```
@@ -130,10 +130,10 @@ jsGantt.attachEvent("onTaskDblClick", (event) => {
 ## Initialize zoom
 
 Method to initialize level.
-After setting zoomLevel and zoomConfig run jsGantt.zoomInit() for applying your current zoom level
+After setting zoomLevel and zoomConfig run javascriptgantt.zoomInit() for applying your current zoom level
 
 ```js title="zoomInit"
-jsGantt.zoomInit();
+javascriptgantt.zoomInit();
 ```
 
 ## Set Language
@@ -141,7 +141,7 @@ jsGantt.zoomInit();
 Method to set or change the language
 
 ```js title="setLocalLang"
-jsGantt.setLocalLang("hi");
+javascriptgantt.setLocalLang("hi");
 ```
 
 | Language      | Language Code |

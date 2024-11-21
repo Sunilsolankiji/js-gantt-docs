@@ -23,7 +23,7 @@ To integrate the Gantt Chart Library, adhere to the steps below:
   4. You're now ready to start using the javascriptgantt Chart Library!    
 
 <a href="https://sunilsolankiji.github.io/javascriptgantt/">
-  <img src="./src/assets/images/jsgantt-screenshot.png">
+  <img src="./static/gantt-img/js-gantt-screenshot.png">
 </a>    
   
 ---  
@@ -106,7 +106,7 @@ gantt.render();
 
 [Live demo](https://sunilsolankiji.github.io/javascriptgantt/)      
 
-**Complete Documentation:** [javascriptgantt Documentation](./docs/Gantt-Chart-Documentation.pdf)  
+**Complete Documentation:** [javascriptgantt Documentation](https://sunilsolankiji.github.io/js-gantt-docs/)  
   
   ---  
   
@@ -116,7 +116,7 @@ gantt.render();
   * **Task Linking:** Four types - finish-to-start, start-to-start, finish-to-finish, start-to-finish.      
 
   <a href="https://sunilsolankiji.github.io/javascriptgantt/">
-    <img src="./src/assets/images/links.gif">
+    <img src="./static/gantt-img/links.gif">
   </a>  
 
   * **Drag and Drop:** Shift multiple tasks horizontally and vertically.    
@@ -126,7 +126,7 @@ gantt.render();
   * **Customization:** Modify the time scale, task edit form, and much more.    
     
   <a href="https://sunilsolankiji.github.io/javascriptgantt/">
-    <img src="./src/assets/images/popup.gif">
+    <img src="./static//gantt-img/popup.gif">
   </a>   
 
   * **Task Progress:** Update task progress via dragging or manually set the percentage.    
@@ -140,17 +140,17 @@ gantt.render();
   * **Aesthetics:** Customize the task colors via a color picker.   
 
   <a href="https://sunilsolankiji.github.io/javascriptgantt/">
-    <img src="./src/assets/images/taskColor.gif">
+    <img src="./static/gantt-img/taskColor.gif">
   </a>       
     
   * **Localization:** Multilingual support to cater to a global audience.   
   * **Themes:** Dark mode for those late-night work sessions.  
 
   <a href="https://sunilsolankiji.github.io/javascriptgantt/">
-    <img src="./src/assets/images/theme.gif">
+    <img src="./static/gantt-img/theme.gif">
   </a>  
   
-  You can see the full list of features in the [documentation](./docs/Gantt-Chart-Documentation.pdf)   
+  You can see the full list of features in the [documentation](https://sunilsolankiji.github.io/js-gantt-docs/)   
     
         
   [Try it Yourself:](https://stackblitz.com/edit/js-bdaa47?file=index.js): Dive into hands-on examples and truly understand the potential of the library.    

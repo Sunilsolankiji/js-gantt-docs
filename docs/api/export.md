@@ -10,7 +10,7 @@ description: API reference for javascriptgantt chart.
 for exporting gantt to PNG
 
 ```js title="exportToPNG"
-jsGantt.exportToPNG(name, stylesheet);
+javascriptgantt.exportToPNG(name, stylesheet);
 ```
 
 Here  
@@ -25,7 +25,7 @@ exportToPNG is not statble yet.
 for exporting gantt to PDF
 
 ```js title="exportToPDF"
-jsGantt.exportToPDF(name, stylesheet);
+javascriptgantt.exportToPDF(name, stylesheet);
 ```
 
 Here  
@@ -40,7 +40,7 @@ exportToPDF is not statble yet.
 for exporting gantt to Excel
 
 ```js title="exportToExcel"
-jsGantt.exportToExcel(name);
+javascriptgantt.exportToExcel(name);
 ```
 
 Here **name** is for the exported file name, it's optional

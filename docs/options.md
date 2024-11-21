@@ -11,7 +11,7 @@ The **javascriptgantt Library** provides various configuration options to tailor
 Format of the date you passed in data
 
 ```js title="date_format"
-jsGantt.options.date_format = "%m-%d-%Y";
+javascriptgantt.options.date_format = "%m-%d-%Y";
 ```
 
 ## localLang
@@ -19,7 +19,7 @@ jsGantt.options.date_format = "%m-%d-%Y";
 Set the language as per your requirements, By default language is English `en`.
 
 ```js title="localLang"
-jsGantt.options.localLang = "en"; // default is en
+javascriptgantt.options.localLang = "en"; // default is en
 ```
 
 ## startDate and endDate
@@ -27,8 +27,8 @@ jsGantt.options.localLang = "en"; // default is en
 `startDate` and `endDate` are date of the gantt range.
 
 ```js title="startDate and endDate"
-jsGantt.options.startDate = "2023-05-01T11:46:17.775Z";
-jsGantt.options.endDate = "2023-06-10T11:46:17.775Z";
+javascriptgantt.options.startDate = "2023-05-01T11:46:17.775Z";
+javascriptgantt.options.endDate = "2023-06-10T11:46:17.775Z";
 ```
 
 ## columns
@@ -36,7 +36,7 @@ jsGantt.options.endDate = "2023-06-10T11:46:17.775Z";
 Columns of the left sidebar
 
 ```js title="columns" showLineNumbers
-jsGantt.options.columns = [
+javascriptgantt.options.columns = [
   {
     name: "text",
     width: 245,
@@ -102,7 +102,7 @@ const selectEditor = {type: "select", map_to: "priority", options ["Low","Medium
 Columns for the right sidebar, it is optional.
 
 ```js titl="rightGrid"
-jsGantt.options.rightGrid = [
+javascriptgantt.options.rightGrid = [
   {
     name: "estimated_hours",
     label: "Total",
@@ -134,9 +134,9 @@ To enable custom color box for all tasks, by default it is `false`
 It can be a `function` or `boolean` type
 
 ```js title="taskColor"
-jsGantt.options.taskColor = true;
+javascriptgantt.options.taskColor = true;
 Or;
-jsGantt.options.taskColor = (task) => {
+javascriptgantt.options.taskColor = (task) => {
   if (task.parent === 0) {
     return false;
   }
@@ -149,7 +149,7 @@ jsGantt.options.taskColor = (task) => {
 You can customize the opacity of the task color with the help of task opacity
 
 ```js title="taskOpacity"
-jsGantt.options.taskOpacity = 0.7;
+javascriptgantt.options.taskOpacity = 0.7;
 ```
 
 ## data
@@ -158,7 +158,7 @@ The task data of projects,
 You can create the nested task by assigning parent the child task parent will be the parent task id.
 
 ```js title="data" showLineNumbers
-jsGantt.options.data = [
+javascriptgantt.options.data = [
   { id: 1, text: "Project 1", parent: 0, progress: 50, taskColor: "#56a4fdf2" },
 
   {
@@ -275,7 +275,7 @@ To enable progress in taskbar.
 type `boolean`, by default it is `false`
 
 ```js title="taskProgress"
-jsGantt.options.taskProgress = true; // default is false
+javascriptgantt.options.taskProgress = true; // default is false
 ```
 
 ## scales
@@ -283,7 +283,7 @@ jsGantt.options.taskProgress = true; // default is false
 Scales array of the timeline
 
 ```js title="scales"
-jsGantt.options.scales = [
+javascriptgantt.options.scales = [
   {
     unit: "week",
     step: 1,
@@ -317,7 +317,7 @@ jsGantt.options.scales = [
 To change the zoom level of the gantt timeline
 
 ```js title="zoomLevel"
-jsGantt.options.zoomLevel = "day";
+javascriptgantt.options.zoomLevel = "day";
 ```
 
 Here are 6 levels :-
@@ -334,7 +334,7 @@ Here are 6 levels :-
 The configuration for different levels of zoom
 
 ```js title="zoomConfig" showLineNumbers
-jsGantt.options.zoomConfig = {
+javascriptgantt.options.zoomConfig = {
   levels: [
     {
       name: "day",
@@ -403,7 +403,7 @@ jsGantt.options.zoomConfig = {
 
 **scales** is the scales for the zoom level.
 
-After setting zoomLevel and zoomConfig run `jsGantt.zoomInit()` for applying your current zoom level
+After setting zoomLevel and zoomConfig run `javascriptgantt.zoomInit()` for applying your current zoom level
 
 ## addLinks
 
@@ -411,9 +411,9 @@ To show task relation through links in the Gantt
 type `boolean` or can be a `function` which return `boolean`, by default it is `false`.
 
 ```js title="addLinks"
-jsGantt.options.addLinks = true;
+javascriptgantt.options.addLinks = true;
 Or;
-jsGantt.options.addLinks = (task) => {
+javascriptgantt.options.addLinks = (task) => {
   if (task.parent === 0) {
     return false;
   }
@@ -427,7 +427,7 @@ Task relations links array
 type `Array`
 
 ```js title="links"
-jsGantt.options.links = [
+javascriptgantt.options.links = [
   { id: 1, source: 1, target: 2, type: 0 },
   { id: 2, source: 2, target: 3, type: 1 },
   { id: 3, source: 3, target: 4, type: 2 },
@@ -457,7 +457,7 @@ To make the tree initially collapse or open
 type `boolean`, by default it is `true`.
 
 ```js title="collapse"
-jsGantt.options.collapse = false; // default is true
+javascriptgantt.options.collapse = false; // default is true
 ```
 
 ## fullWeek
@@ -467,7 +467,7 @@ Show the full week or workdays.
 type `boolean`, by default it is `true`.
 
 ```js title="fullWeek"
-jsGantt.options.fullWeek = false; // default is true
+javascriptgantt.options.fullWeek = false; // default is true
 ```
 
 ## todayMarker
@@ -477,7 +477,7 @@ It adds a vertical marker at today’s date column.
 type `boolean`, by default it is `true`.
 
 ```js title="todayMarker"
-jsGantt.options.todayMarker = false; // default is true
+javascriptgantt.options.todayMarker = false; // default is true
 ```
 
 ## weekends
@@ -485,7 +485,7 @@ jsGantt.options.todayMarker = false; // default is true
 type `Array`, array of strings "Sat", "Sun", to set the weekends dynamically.
 
 ```js title="weekends"
-jsGantt.options.weekends = ["Sat", "Sun"];
+javascriptgantt.options.weekends = ["Sat", "Sun"];
 ```
 
 ## weekStart
@@ -493,7 +493,7 @@ jsGantt.options.weekends = ["Sat", "Sun"];
 type `number`, it set the start of the week, by default it is set to 1 means "Monday".
 
 ```js title="weekStart"
-jsGantt.options.weekStart = 0; // default is 1
+javascriptgantt.options.weekStart = 0; // default is 1
 ```
 
 :::info
@@ -507,7 +507,7 @@ To set the height of the scale. You can pass the number value which will apply t
 type `number` or `Array`, 30 || [20, 30], set the height of scales, by default, it is 30.
 
 ```js title="scale_height"
-jsGantt.options.scale_height = [20, 30]; // default is 30
+javascriptgantt.options.scale_height = [20, 30]; // default is 30
 ```
 
 ## row_height
@@ -517,7 +517,7 @@ To set the height of the row.
 type `number`, by default it is 50
 
 ```js title="row_height"
-jsGantt.options.row_height = 60; // default is 50
+javascriptgantt.options.row_height = 60; // default is 50
 ```
 
 ## updateLinkOnDrag
@@ -527,7 +527,7 @@ To update the links position live make it true or false if you want to update li
 By default, it is `true`
 
 ```js title="updateLinkOnDrag"
-jsGantt.options.updateLinkOnDrag = false; // default is true
+javascriptgantt.options.updateLinkOnDrag = false; // default is true
 ```
 
 ## selectAreaOnDrag
@@ -537,7 +537,7 @@ For selecting start and end range through draging.
 type: `boolean`, by default it is `false`.
 
 ```js title="selectAreaOnDrag"
-jsGantt.options.selectAreaOnDrag = true; // default is false
+javascriptgantt.options.selectAreaOnDrag = true; // default is false
 ```
 
 ## mouseScroll
@@ -546,7 +546,7 @@ With javascriptgantt, users can efficiently navigate the timeline by clicking an
 By default it is `false`
 
 ```js title="mouseScroll"
-jsGantt.options.mouseScroll = true; // default is false
+javascriptgantt.options.mouseScroll = true; // default is false
 ```
 
 ## ctrlKeyRequiredForMouseScroll
@@ -555,17 +555,17 @@ Determines whether the Ctrl key must be pressed for mouse scrolling functionalit
 By default it is `true`
 
 ```js title="ctrlKeyRequiredForMouseScroll"
-jsGantt.options.ctrlKeyRequiredForMouseScroll = true; // default is false
+javascriptgantt.options.ctrlKeyRequiredForMouseScroll = true; // default is false
 ```
 
 ## sort
 
-jsGantt offers the capability to sort data within the grid columns on the client side. This functionality can be achieved through two distinct methods:
+javascriptgantt offers the capability to sort data within the grid columns on the client side. This functionality can be achieved through two distinct methods:
 
 I. To enable sorting within the Gantt chart, simply set the `sort` property to `true`:
 
 ```js title="sort"
-jsGantt.options.sort = true; // default is false
+javascriptgantt.options.sort = true; // default is false
 ```
 
 II. To initiate sorting within the grid based on a specific action or event, such as a button click or page load, simply invoke the sort method.
@@ -585,7 +585,7 @@ To display a project as a split task.
 type `boolean`, by default it is `false`.
 
 ```js title="splitTask"
-jsGantt.options.splitTask = true; // default is false
+javascriptgantt.options.splitTask = true; // default is false
 ```
 :::danger
 splitTask is not stable yet.
@@ -598,7 +598,7 @@ To add custom markers to the timeline
 type `array`
 
 ```js title="customMarker"
-jsGantt.options.customMarker = [
+javascriptgantt.options.customMarker = [
   {
     start_date: "06-20-2024",
     css: "party",
@@ -615,7 +615,7 @@ To export Gantt chart
 type `string`
 
 ```js title="exportApi"
-jsGantt.options.exportApi = "https://exampleApi.com/export";
+javascriptgantt.options.exportApi = "https://exampleApi.com/export";
 ``` -->
 
 ## minColWidth
@@ -625,7 +625,7 @@ minimum width of the timeline cell.
 type `number`, by default it is `80`
 
 ```js title="minColWidth"
-jsGantt.options.minColWidth = 85 // default is 80;
+javascriptgantt.options.minColWidth = 85 // default is 80;
 ```
 
 ## dropArea
@@ -636,5 +636,5 @@ The `dropArea` option is used to highlight the area where a task will be dropped
 **Default** :  `true`
 
 ```javascript title="dropArea"
-jsGantt.options.dropArea = true; // The default is true.
+javascriptgantt.options.dropArea = true; // The default is true.
 ```

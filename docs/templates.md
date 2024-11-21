@@ -11,7 +11,7 @@ The **javascriptgantt Library** provides various configuration. The Templates op
 It is a function template which return the `html` for the `tooltip`
 
 ```js title="tooltip_text"
-jsGantt.templates.tooltip_text = function (start, end, task) {
+javascriptgantt.templates.tooltip_text = function (start, end, task) {
   return `<b>${task.parent === 0 ? "User" : "Task"}:</b> 
             ${task.parent === 0 ? task.text : task.subject} 
             <br/><b>Start date:</b>${start} 
@@ -28,7 +28,7 @@ jsGantt.templates.tooltip_text = function (start, end, task) {
 It returns the `html` for the `taskbars`
 
 ```js title="taskbar_text"
-jsGantt.templates.taskbar_text = function (start, end, task) {
+javascriptgantt.templates.taskbar_text = function (start, end, task) {
   if (task.parent == 0) {
     return `User : ${task.text}`;
   } else {
@@ -42,7 +42,7 @@ jsGantt.templates.taskbar_text = function (start, end, task) {
 It returns `true` or `false`, for allowing the task draging for spcific tasks.
 
 ```js title="task_drag"
-jsGantt.templates.task_drag = function (start, end, task) {
+javascriptgantt.templates.task_drag = function (start, end, task) {
   if (task.parent == 0) {
     return `User : ${task.text}`;
   } else {
@@ -56,7 +56,7 @@ jsGantt.templates.task_drag = function (start, end, task) {
 It returns the grid folder `html`
 
 ```js title="grid_folder"
-jsGantt.templates.grid_folder = (task) => {
+javascriptgantt.templates.grid_folder = (task) => {
   return `<div class="folder-class">Folder</div>`;
 };
 ```
@@ -66,7 +66,7 @@ jsGantt.templates.grid_folder = (task) => {
 It returns the grid file `html`
 
 ```js title="grid_file"
-jsGantt.templates.grid_file = (task) => {
+javascriptgantt.templates.grid_file = (task) => {
   return `<div class="file-class">File</div>`;
 };
 ```
@@ -76,7 +76,7 @@ jsGantt.templates.grid_file = (task) => {
 It returns the grid blank `html`
 
 ```js title="grid_blank"
-jsGantt.templates.grid_blank = (task) => {
+javascriptgantt.templates.grid_blank = (task) => {
   return `<span>Blank</span>`;
 };
 ```
@@ -87,7 +87,7 @@ It returns the class for the sidebar header
 You can add multiple classes by separating them with space.
 
 ```js title="grid_header_class"
-jsGantt.templates.grid_header_class = (columns, index) => {
+javascriptgantt.templates.grid_header_class = (columns, index) => {
   return "my-header-class header-class";
 };
 ```
@@ -98,7 +98,7 @@ It returns the class for the row of sidebar grid
 You can add multiple classes by separating them with space.
 
 ```js title="grid_row_class"
-jsGantt.templates.grid_row_class = (start, end, task) => {
+javascriptgantt.templates.grid_row_class = (start, end, task) => {
   return "my-grid-row-class";
 };
 ```
@@ -108,7 +108,7 @@ jsGantt.templates.grid_row_class = (start, end, task) => {
 It returns classes for task
 
 ```js title="task_class"
-jsGantt.templates.task_class = (start, end, task) => {
+javascriptgantt.templates.task_class = (start, end, task) => {
   return "my-task-class";
 };
 ```
@@ -118,7 +118,7 @@ jsGantt.templates.task_class = (start, end, task) => {
 It returns classes for the task row
 
 ```js title="task_row_class"
-jsGantt.templates.task_row_class = (start, end, task) => {
+javascriptgantt.templates.task_row_class = (start, end, task) => {
   return "my-task-row-class";
 };
 ```
@@ -128,7 +128,7 @@ jsGantt.templates.task_row_class = (start, end, task) => {
 It returns classes for the timeline scales
 
 ```js title="scale_cell_class"
-jsGantt.templates.scale_cell_class = (ate, scale, scaleIndex) => {
+javascriptgantt.templates.scale_cell_class = (ate, scale, scaleIndex) => {
   return "my-scale-class";
 };
 ```
@@ -138,7 +138,7 @@ jsGantt.templates.scale_cell_class = (ate, scale, scaleIndex) => {
 It returns classes for the sidebar grid cell
 
 ```js title="grid_cell_class"
-jsGantt.templates.grid_cell_class = (col, task) => {
+javascriptgantt.templates.grid_cell_class = (col, task) => {
   return "my-grid-cell-class";
 };
 ```
@@ -148,7 +148,7 @@ jsGantt.templates.grid_cell_class = (col, task) => {
 It returns classes for the sidebar grid cell
 
 ```js title="timeline_cell_class"
-jsGantt.templates.timeline_cell_class = (task, date) => {
+javascriptgantt.templates.timeline_cell_class = (task, date) => {
   return "my-task-cell-class";
 };
 ```
@@ -158,7 +158,7 @@ jsGantt.templates.timeline_cell_class = (task, date) => {
 It returns the html for the popup modal open on dblclick
 
 ```js title="showLightBox"
-jsGantt.templates.showLightBox = (task) => {
+javascriptgantt.templates.showLightBox = (task) => {
   return `<form action="/action_page.php"> 
   <label for="fname">First name:</label><br>  
   <input type="text" id="fname" name="fname" value="John"><br>  

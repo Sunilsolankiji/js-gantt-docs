@@ -11,7 +11,7 @@ The **Events** option in the **javascriptgantt library** offers a comprehensive 
 Triggered when Double clicked on the task
 
 ```js title="onTaskDblClick"
-jsGantt.attachEvent("onTaskDblClick", (event) => {
+javascriptgantt.attachEvent("onTaskDblClick", (event) => {
   console.log("onTaskDblClick: ", event);
 });
 ```
@@ -21,7 +21,7 @@ jsGantt.attachEvent("onTaskDblClick", (event) => {
 Triggered before Double clicked on the task
 
 ```js title="onBeforeTaskDblClick"
-jsGantt.attachEvent("onBeforeTaskDblClick", (event) => {
+javascriptgantt.attachEvent("onBeforeTaskDblClick", (event) => {
   console.log("onBeforeTaskDblClick: ", event);
   if(event.task.id === 3){
     return false;
@@ -38,7 +38,7 @@ return `false` if you want to prevent the task DblClick.
 Triggered when Double clicked on the link
 
 ```js title="onLinkDblClick"
-jsGantt.attachEvent("onLinkDblClick", (event) => {
+javascriptgantt.attachEvent("onLinkDblClick", (event) => {
   console.log("onLinkDblClick: ", event);
 });
 ```
@@ -48,7 +48,7 @@ jsGantt.attachEvent("onLinkDblClick", (event) => {
 Triggered before the link added
 
 ```js title="onBeforeLinkAdd"
-jsGantt.attachEvent("onBeforeLinkAdd", (event) => {
+javascriptgantt.attachEvent("onBeforeLinkAdd", (event) => {
   console.log("onBeforeLinkAdd: ", event);
 });
 ```
@@ -58,7 +58,7 @@ jsGantt.attachEvent("onBeforeLinkAdd", (event) => {
 Triggered when link added
 
 ```js title="onLinkAdd"
-jsGantt.attachEvent("onLinkAdd", (event) => {
+javascriptgantt.attachEvent("onLinkAdd", (event) => {
   console.log("onLinkAdd: ", event);
 });
 ```
@@ -68,7 +68,7 @@ jsGantt.attachEvent("onLinkAdd", (event) => {
 Triggered when link deleted
 
 ```js title="onDeleteLink"
-jsGantt.attachEvent("onDeleteLink", (event) => {
+javascriptgantt.attachEvent("onDeleteLink", (event) => {
   console.log("onDeleteLink: ", event);
 });
 ```
@@ -78,7 +78,7 @@ jsGantt.attachEvent("onDeleteLink", (event) => {
 Triggered before the task dragging
 
 ```js title="onBeforeTaskDrag"
-jsGantt.attachEvent("onBeforeTaskDrag", (event) => {
+javascriptgantt.attachEvent("onBeforeTaskDrag", (event) => {
   console.log("onBeforeTaskDrag: ", event);
   if (event.task.children.length !== 0) {
     return false;
@@ -97,7 +97,7 @@ return `flase` if you don't want to let the task drag.
 Triggered on the dragging of the task
 
 ```js title="onTaskDrag"
-jsGantt.attachEvent("onTaskDrag", (event) => {
+javascriptgantt.attachEvent("onTaskDrag", (event) => {
   console.log("onTaskDrag: ", event);
 });
 ```
@@ -107,7 +107,7 @@ jsGantt.attachEvent("onTaskDrag", (event) => {
 Triggered before task drop
 
 ```js title="onBeforeTaskDrop"
-jsGantt.attachEvent("onBeforeTaskDrop", (event) => {
+javascriptgantt.attachEvent("onBeforeTaskDrop", (event) => {
   console.log("onBeforeTaskDrop: ", event);
 
   if (event.parentTask.id == 12) {
@@ -125,7 +125,7 @@ return `flase` if you don't want to let the task drop at the current position.
 Triggered after the dragging of the task
 
 ```js title="onAfterTaskDrag"
-jsGantt.attachEvent("onAfterTaskDrag", (event) => {
+javascriptgantt.attachEvent("onAfterTaskDrag", (event) => {
   console.log("onAfterTaskDrag: ", event);
 });
 ```
@@ -135,7 +135,7 @@ jsGantt.attachEvent("onAfterTaskDrag", (event) => {
 Triggered when the task deleted
 
 ```js title="onTaskDelete"
-jsGantt.attachEvent("onTaskDelete", (event) => {
+javascriptgantt.attachEvent("onTaskDelete", (event) => {
   console.log("onTaskDelete: ", event);
 });
 ```
@@ -145,7 +145,7 @@ jsGantt.attachEvent("onTaskDelete", (event) => {
 Triggered after the task updated
 
 ```js title="onTaskDelete"
-jsGantt.attachEvent("onAfterTaskUpdate", (event) => {
+javascriptgantt.attachEvent("onAfterTaskUpdate", (event) => {
   console.log("onAfterTaskUpdate: ", event);
 });
 ```
@@ -155,7 +155,7 @@ jsGantt.attachEvent("onAfterTaskUpdate", (event) => {
 Triggered when you scroll gantt
 
 ```js title="onScroll"
-jsGantt.attachEvent("onScroll", (event) => {
+javascriptgantt.attachEvent("onScroll", (event) => {
   console.log("onScroll: ", event);
 });
 ```
@@ -165,7 +165,7 @@ jsGantt.attachEvent("onScroll", (event) => {
 Triggered on window resize
 
 ```js title="onResize"
-jsGantt.attachEvent("onResize", (event) => {
+javascriptgantt.attachEvent("onResize", (event) => {
   console.log("onResize: ", event);
 });
 ```
@@ -175,7 +175,7 @@ jsGantt.attachEvent("onResize", (event) => {
 Triggered when clicked on the timeline cell
 
 ```js title="onCellClick"
-jsGantt.attachEvent("onCellClick", (event) => {
+javascriptgantt.attachEvent("onCellClick", (event) => {
   console.log("onCellClick: ", event);
 });
 ```
@@ -185,7 +185,7 @@ jsGantt.attachEvent("onCellClick", (event) => {
 Triggered when requested Fullscreen
 
 ```js title="onRequestFullScreen"
-jsGantt.attachEvent("onRequestFullScreen", (event) => {
+javascriptgantt.attachEvent("onRequestFullScreen", (event) => {
   console.log("onRequestFullScreen: ", event);
 });
 ```
@@ -195,7 +195,7 @@ jsGantt.attachEvent("onRequestFullScreen", (event) => {
 Triggered when exited Fullscreen
 
 ```js title="onExitFullScreen"
-jsGantt.attachEvent("onExitFullScreen", (event) => {
+javascriptgantt.attachEvent("onExitFullScreen", (event) => {
   console.log("onExitFullScreen: ", event);
 });
 ```
@@ -205,7 +205,7 @@ jsGantt.attachEvent("onExitFullScreen", (event) => {
 Triggered when task tree toggled
 
 ```js title="onTaskToggle"
-jsGantt.attachEvent("onTaskToggle", (event) => {
+javascriptgantt.attachEvent("onTaskToggle", (event) => {
   console.log("onTaskToggle: ", event);
 });
 ```
@@ -215,7 +215,7 @@ jsGantt.attachEvent("onTaskToggle", (event) => {
 Triggered on taskbar color change
 
 ```js title="onColorChange"
-jsGantt.attachEvent("onColorChange", (event) => {
+javascriptgantt.attachEvent("onColorChange", (event) => {
   console.log("onColorChange: ", event);
 });
 ```
@@ -225,7 +225,7 @@ jsGantt.attachEvent("onColorChange", (event) => {
 Select the start & end date through Drag
 
 ```js title="selectAreaOnDrag"
-jsGantt.attachEvent("selectAreaOnDrag", (event) => {
+javascriptgantt.attachEvent("selectAreaOnDrag", (event) => {
   console.log("selectAreaOnDrag: ", event);
 });
 ```
@@ -235,7 +235,7 @@ jsGantt.attachEvent("selectAreaOnDrag", (event) => {
 Triggered after task progress drag
 
 ```js title="onAfterProgressDrag"
-jsGantt.attachEvent("onAfterProgressDrag", (event) => {
+javascriptgantt.attachEvent("onAfterProgressDrag", (event) => {
   console.log("onAfterProgressDrag: ", event);
 });
 ```
@@ -245,7 +245,7 @@ jsGantt.attachEvent("onAfterProgressDrag", (event) => {
 Triggered before task progress drag
 
 ```js title="onBeforeProgressDrag"
-jsGantt.attachEvent("onBeforeProgressDrag", (event) => {
+javascriptgantt.attachEvent("onBeforeProgressDrag", (event) => {
   console.log("onBeforeProgressDrag: ", event);
 
   if (event.task.parent === 0) {
@@ -265,7 +265,7 @@ return `flase` if you don't want to let the task progress drag.
 Triggered on auto scheduling tasks.
 
 ```js title="onAutoScheduling"
-jsGantt.attachEvent("onAutoScheduling", (event) => {
+javascriptgantt.attachEvent("onAutoScheduling", (event) => {
   console.log("onAutoScheduling: ", event);
 });
 ```
@@ -275,7 +275,7 @@ jsGantt.attachEvent("onAutoScheduling", (event) => {
 Triggered on blur when you use inline eitor of gantt.
 
 ```js title="onBeforeSave"
-jsGantt.attachEvent("onBeforeSave", (event) => {
+javascriptgantt.attachEvent("onBeforeSave", (event) => {
   console.log("onBeforeSave: ", event);
 });
 ```
@@ -285,7 +285,7 @@ jsGantt.attachEvent("onBeforeSave", (event) => {
 Triggered on blur when you use inline eitor of gantt.
 
 ```js title="onSave"
-jsGantt.attachEvent("onSave", (event) => {
+javascriptgantt.attachEvent("onSave", (event) => {
   console.log("onSave: ", event);
 });
 ```
